@@ -1,6 +1,6 @@
 <?php
 
-namespace Sim\PortfolioBundle\DependencyInjection;
+namespace Sim\CoreBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('sim_portfolio');
+        $rootNode = $treeBuilder->root('sim_core');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

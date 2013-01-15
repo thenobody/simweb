@@ -1,4 +1,14 @@
+sim_core:
+    resource: "@SimCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sim_admin:
+    resource: "@SimAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 sim_portfolio:
     resource: "@SimPortfolioBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /sdf

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sim\PortfolioBundle\Entity;
+namespace Sim\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Tag
  *
  * @ORM\Table(name="tags")
- * @ORM\Entity(repositoryClass="Sim\PortfolioBundle\Entity\TagRepository")
+ * @ORM\Entity(repositoryClass="Sim\CoreBundle\Entity\TagRepository")
  */
 class Tag
 {

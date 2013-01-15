@@ -1,6 +1,6 @@
 <?php
 
-namespace Sim\PortfolioBundle\Entity;
+namespace Sim\CoreBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 

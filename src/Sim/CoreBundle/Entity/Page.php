@@ -1,6 +1,6 @@
 <?php
 
-namespace Sim\PortfolioBundle\Entity;
+namespace Sim\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Page
  *
  * @ORM\Table(name="pages")
- * @ORM\Entity(repositoryClass="Sim\PortfolioBundle\Entity\PageRepository")
+ * @ORM\Entity(repositoryClass="Sim\CoreBundle\Entity\PageRepository")
  */
 class Page
 {

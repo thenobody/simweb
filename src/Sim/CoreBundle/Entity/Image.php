@@ -1,6 +1,6 @@
 <?php
 
-namespace Sim\PortfolioBundle\Entity;
+namespace Sim\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Image
  *
  * @ORM\Table(name="images")
- * @ORM\Entity(repositoryClass="Sim\PortfolioBundle\Entity\ImageRepository")
+ * @ORM\Entity(repositoryClass="Sim\CoreBundle\Entity\ImageRepository")
  */
 class Image
 {

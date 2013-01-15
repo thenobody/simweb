@@ -1,6 +1,6 @@
 <?php
 
-namespace Sim\PortfolioBundle\Controller;
+namespace Sim\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;

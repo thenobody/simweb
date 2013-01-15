@@ -1,6 +1,6 @@
 <?php
 
-namespace Sim\PortfolioBundle\Tests\Controller;
+namespace Sim\CoreBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

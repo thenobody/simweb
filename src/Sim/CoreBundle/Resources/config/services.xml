@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="sim_portfolio.example.class">Sim\PortfolioBundle\Example</parameter>
+        <parameter key="sim_core.example.class">Sim\CoreBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="sim_portfolio.example" class="%sim_portfolio.example.class%">
+        <service id="sim_core.example" class="%sim_core.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>

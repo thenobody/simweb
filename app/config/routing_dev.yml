@@ -1,4 +1,0 @@
-sim_portfolio:
-    resource: "@SimPortfolioBundle/Controller/"
-    type:     annotation
-    prefix:   /
