@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Sim\CoreBundle\SimCoreBundle(),
+            new Sim\PortfolioBundle\SimPortfolioBundle(),
+            new Sim\AdminBundle\SimAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

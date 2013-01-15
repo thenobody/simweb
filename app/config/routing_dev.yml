@@ -1,0 +1,8 @@
+sim_admin:
+    resource: "@SimAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+sim_portfolio:
+    resource: "@SimPortfolioBundle/Resources/config/routing.yml"
+    prefix:   /
+

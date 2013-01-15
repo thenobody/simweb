@@ -1,0 +1,7 @@
+parameters:
+#    sim_portfolio.example.class: Sim\PortfolioBundle\Example
+
+services:
+#    sim_portfolio.example:
+#        class: %sim_portfolio.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

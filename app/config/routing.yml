@@ -1,14 +1,8 @@
-sim_core:
-    resource: "@SimCoreBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
 sim_admin:
-    resource: "@SimAdminBundle/Controller/"
-    type:     annotation
-    prefix:   /
+    resource: "@SimAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
 
 sim_portfolio:
-    resource: "@SimPortfolioBundle/Controller/"
-    type:     annotation
-    prefix:   /sdf
+    resource: "@SimPortfolioBundle/Resources/config/routing.yml"
+    prefix:   /
+

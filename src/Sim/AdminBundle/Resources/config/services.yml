@@ -1,0 +1,7 @@
+parameters:
+#    sim_admin.example.class: Sim\AdminBundle\Example
+
+services:
+#    sim_admin.example:
+#        class: %sim_admin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
