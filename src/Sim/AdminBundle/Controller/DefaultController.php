@@ -6,8 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('SimAdminBundle:Default:index.html.twig', array('name' => $name . '-admin'));
+        return $this->redirect($this->generateUrl('sim_admin_portfolio'));
     }
 }

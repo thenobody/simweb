@@ -1,3 +1,7 @@
 sim_admin_homepage:
-    pattern:  /hello/{name}
+    pattern:  /
     defaults: { _controller: SimAdminBundle:Default:index }
+    
+sim_admin_portfolio:
+    pattern:  /portfolio
+    defaults: { _controller: SimAdminBundle:Portfolio:index }
