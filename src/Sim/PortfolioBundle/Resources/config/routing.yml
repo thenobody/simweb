@@ -1,3 +1,3 @@
-sim_portfolio_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: SimPortfolioBundle:Default:index }
+sim_portfolio_project:
+    pattern:  /projects/{slug}
+    defaults: { _controller: SimPortfolioBundle:Projects:project }

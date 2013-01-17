@@ -1,7 +1,37 @@
 {% extends 'SimAdminBundle::layout.html.twig' %}
 
-{% block body %}
+{% block content %}
 {{ parent() }}
 
-list
-{% endblock %} {# body #}
+<table class="table table-bordered" align="center">
+    <thead>
+        <tr class="success">
+            <th>project</th>
+            <th>url</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        {% for article in articles %}
+        <tr>
+            <td>{{ article.getTitle() }}</td>
+            <td>
+                <a href="{{ path('sim_portfolio_project', { 'slug' : article.getSlug() }) }}">
+                    {{ path('sim_portfolio_project', { 'slug' : article.getSlug() }) }}
+                </a>
+            </td>
+            <td>
+                <a href="{{ path('sim_admin_portfolio_edit', { 'id' : article.getId() }) }}" class="btn">
+                    Edit
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="controls row-fluid">
+    <a href="{{ path('sim_admin_portfolio_create') }}" class="offset10 span2 btn btn-large btn-primary">Create</a>
+</div>
+{% endblock %} {# content #}

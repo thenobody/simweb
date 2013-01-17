@@ -10,8 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="articles")
  * @ORM\Entity(repositoryClass="Sim\CoreBundle\Entity\ArticleRepository")
  */
-class Article
-{
+class Article {
+
     /**
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
@@ -20,42 +20,42 @@ class Article
      * @var integer
      */
     private $id;
-    
+
     /**
      * @ORM\Column(name="title", type="string", length=255)
      * 
      * @var string
      */
     private $title;
-    
+
     /**
      * @ORM\Column(name="slug", type="string", length=255)
      * 
      * @var string
      */
     private $slug;
-    
+
     /**
      * @ORM\Column(name="subtitle", type="string", length=255, nullable=true)
      * 
      * @var string
      */
     private $subtitle = NULL;
-    
+
     /**
      * @ORM\Column(name="content", type="text")
      * 
      * @var string
      */
     private $content;
-    
+
     /**
      * @ORM\Column(name="theme_name", type="string", length=255, nullable=true)
      * 
      * @var string
      */
     private $themeName = NULL;
-    
+
     /**
      * @ORM\OneToOne(targetEntity="Image")
      * @ORM\JoinColumn(name="main_image_id", referencedColumnName="id")
@@ -63,29 +63,30 @@ class Article
      * @var Image
      */
     private $mainImage = NULL;
-    
+
     /**
      * @ORM\Column(name="order_num", type="integer", nullable=true)
      * 
      * @var int
      */
     private $orderNum = NULL;
-    
+
     /**
      * @ORM\Column(name="visible", type="boolean")
      * 
      * @var boolean
      */
     private $visible = TRUE;
-    
+
     /* Collections */
+
     /**
      * @ORM\OneToMany(targetEntity="Image", mappedBy="article")
 
-     * @var \Doctrine\Common\Collections\ArrayCollection
+     * @var ArrayCollection
      */
     private $images;
-    
+
     /**
      * @ORM\ManyToMany(targetEntity="Tag", mappedBy="articles")
      * @ORM\JoinTable(name="articles_tags",
@@ -93,16 +94,16 @@ class Article
      *     inverseJoinColumns={@ORM\JoinColumn(name="tag_id", referencedColumnName="id")}
      * )
      * 
-     * @var \Doctrine\Common\Collections\ArrayCollection
+     * @var ArrayCollection
      */
     private $tags;
-    
+
     function __construct() {
         $this->images = new \Doctrine\Common\Collections\ArrayCollection();
         $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
-        /**
+    /**
      * @return int
      */
     public function getId() {
@@ -142,6 +143,44 @@ class Article
      */
     public function setSlug($slug) {
         $this->slug = $slug;
+    }
+
+    /**
+     * @param string $slug
+     */
+    public function setSlugFromString($string) {
+        $slug = $this->slugify($string);
+        $this->setSlug($slug);
+    }
+
+    /**
+     * @param string $string
+     * 
+     * @return string
+     */
+    protected function slugify($string) {
+        // replace non letter by -
+        $text = preg_replace('~[^\\pL\d0-9]+~u', '-', $string);
+
+        // trim
+        $text = trim($text, '-');
+
+        // transliterate
+        if (function_exists('iconv')) {
+            $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+        }
+
+        // lowercase
+        $text = strtolower($text);
+
+        // remove unwanted characters
+        $text = preg_replace('~[^-\w0-9]+~', '', $text);
+
+        if (empty($text)) {
+            return 'n-a';
+        }
+
+        return $text;
     }
 
     /**
@@ -229,19 +268,19 @@ class Article
     }
 
     /**
-     * @return \Doctrine\Common\Collections\ArrayCollection of Image
+     * @return ArrayCollection of Image
      */
     public function getImages() {
         return $this->images;
     }
 
     /**
-     * @param \Doctrine\Common\Collections\ArrayCollection $images Image
+     * @param ArrayCollection $images Image
      */
     public function setImages($images) {
         $this->images = $images;
     }
-    
+
     /**
      * @param Image $image
      */
@@ -251,19 +290,19 @@ class Article
     }
 
     /**
-     * @return \Doctrine\Common\Collections\ArrayCollection of Tag
+     * @return ArrayCollection of Tag
      */
     public function getTags() {
         return $this->tags;
     }
 
     /**
-     * @param \Doctrine\Common\Collections\ArrayCollection $tags Tag
+     * @param ArrayCollection $tags Tag
      */
     public function setTags($tags) {
         $this->tags = $tags;
     }
-    
+
     /**
      * @param Tag $tag
      */

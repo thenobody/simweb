@@ -2,6 +2,18 @@ sim_admin_homepage:
     pattern:  /
     defaults: { _controller: SimAdminBundle:Default:index }
     
-sim_admin_portfolio:
+sim_admin_portfolio_list:
     pattern:  /portfolio
     defaults: { _controller: SimAdminBundle:Portfolio:index }
+    
+sim_admin_portfolio_create:
+    pattern:  /portfolio/new
+    defaults: { _controller: SimAdminBundle:Portfolio:create }
+    
+sim_admin_portfolio_success:
+    pattern:  /portfolio/success
+    defaults: { _controller: SimAdminBundle:Portfolio:success }
+    
+sim_admin_portfolio_edit:
+    pattern:  /portfolio/edit/{id}
+    defaults: { _controller: SimAdminBundle:Portfolio:edit }

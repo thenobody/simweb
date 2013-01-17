@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->redirect($this->generateUrl('sim_admin_portfolio'));
+        return $this->redirect($this->generateUrl('sim_admin_portfolio_list'));
     }
 }

@@ -1,0 +1,10 @@
+{% extends 'SimAdminBundle::layout.html.twig' %}
+
+{% block content %}
+{{ parent() }}
+
+<h2>Portfolio successfully saved!</h2>
+
+Click <a href="{{ path('sim_admin_portfolio_list') }}">here</a> to return to the main list.
+
+{% endblock %} {# content #}
