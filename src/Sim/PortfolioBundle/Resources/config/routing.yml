@@ -1,3 +1,7 @@
+sim_portfolio_default:
+    pattern: /
+    defaults: { _controller: SimPortfolioBundle:Default:index }
+
 sim_portfolio_project:
-    pattern:  /projects/{slug}
-    defaults: { _controller: SimPortfolioBundle:Projects:project }
+    pattern:  /project/{slug}
+    defaults: { _controller: SimPortfolioBundle:Project:project }

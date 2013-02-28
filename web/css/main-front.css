@@ -1,0 +1,523 @@
+/* font imports */
+@import url('http://fonts.googleapis.com/css?family=Brawler');
+
+body {
+    background-color: #544F53;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #000;
+}
+
+div.main-nav {
+    position: fixed;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+div.main-nav a {
+    color: #fff;
+}
+
+div.main-nav div.ul-border {
+    border: 4px solid rgba(255, 255, 255, .5);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-width: 0 4px 4px;
+}
+
+div.main-nav ul {
+    margin: 0;
+    list-style-type: none;
+    background-color: #000;
+}
+
+div.main-nav ul li {
+    height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #999;
+}
+
+div.main-nav ul li:last-child {
+    border-bottom: 1px solid #99aaaa;
+}
+
+div.main-nav ul a {
+    line-height: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+div.main-nav a.email {
+    display: inline-block;
+    line-height: 35px;
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+div#about-me {
+    background-color: #362f2d;
+    border: 5px solid #231f20;
+    border-width: 0 0 5px;
+}
+
+div#about-me h1 {
+    color: white;
+    font-family: 'Brawler', serif;
+    font-size: 26px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 80px;
+    margin: 5px 0 0;
+    padding: 0;
+    border: 1px solid #9b6d3f;
+    border-width: 0 0 1px;
+}
+
+div#about-me h2 {
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 58px;
+}
+div#about-me span.gray-underscore {
+    margin-top: 8px;
+    height: 19px;
+    width: 100%;
+    display: block;
+    color: #a7a7a7;
+    font-family: 'Brawler', serif;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #4a4442;
+    border-width: 0 0 1px;
+}
+
+div#about-me span strong {
+    color: white;
+    font-size: 15px;
+    font-family: 'Brawler', serif;
+    text-transform: uppercase;
+}
+
+div#works {
+    background-color: white;
+}
+
+div#works h1#works-title {
+    margin: 106px 0 32px;
+    width: 100%;
+    height: 41px;
+    background: url('../img/text-works.png') 50% 0 no-repeat;
+}
+
+div#works div.dark-rectangle {
+    width: 100%;
+    height: 40px;
+    background-color: #231f20;
+}
+
+div#works div.work {
+    padding: 80px 0;
+    border: 1px solid #d3d3d3;
+    border-width: 0 0 1px;
+}
+div#works div.work div.right-column h1 {
+    height: 33px;
+    color: #231f20;
+    font-size: 35px;
+    font-family: 'Brawler', serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+    border-width: 0 0 1px;
+}
+
+div#works div.work div.right-column span.gray-underscore {
+    margin-top: 9px;
+    height: 16px;
+    width: 100%;
+    display: block;
+    color: #231f20;
+    font-family: 'Brawler', serif;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    border-width: 0 0 1px;
+}
+
+div#works div.work div.right-column div.work-notes {
+    color: #362f2d;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 14px;
+}
+
+div#works div.work div.right-column div.work-notes strong {
+    font-weight: bold;
+}
+
+div#ten-things {
+    background-color: white;
+}
+
+div#ten-things h1#ten-things-title {
+    background-color: white;
+    margin: 106px 0 23px;
+    width: 100%;
+    height: 49px;
+    background: url('../img/text-10-things.png') 50% 0 no-repeat;
+}
+
+div#ten-things div.dark-rectangle {
+    width: 100%;
+    height: 40px;
+    background-color: #231f20;
+}
+
+div#ten-things div.thing {
+    border: 1px solid #d3d2d2;
+    border-width: 0 0 1px;
+}
+
+div#ten-things div.thing div.thing-head {
+    height: 100px;
+    margin-top: 15px;
+}
+
+div#ten-things div.thing div.thing-head div.circle-number {
+    height: 80px;
+    width: 80px;
+    margin: 0 20px 0;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#ten-things div.thing div.thing-head:hover {
+    cursor: pointer;
+}
+
+div#ten-things div.thing div.thing-head:hover div.circle-number {
+    border: 5px solid black;
+}
+
+div#ten-things div.thing div.thing-head h1 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 700px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Brawler', serif;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+div#ten-things div.thing div.thing-head div.close-wrap {
+    width: 100px;
+    height: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#ten-things div.thing div.thing-head a.close {
+    width: 16px;
+    height: 15px;
+    background: url('../img/close-10-things.png') 0 0 no-repeat;
+    display: block;
+    float: none;
+    margin: 38px auto 0;
+}
+
+div#ten-things div.thing div.thing-content {
+    color: white;
+    font-size: 20px;
+    font-family: 'Brawler', serif;
+}
+
+div#ten-things div.thing div.thing-content div.text-wrap {
+    padding: 30px 80px;
+    text-align: center;
+}
+
+/* Writing */
+div#ten-things div.thing.writing div.thing-head div.circle-number {
+    background: url('../img/01.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.writing:hover div.thing-head div.circle-number {
+    border: 5px solid #ff5c7f;
+}
+
+div#ten-things div.thing.writing div.thing-content {
+    background: #ff5c7f;
+}
+/* END - Writing */
+
+/* English */
+div#ten-things div.thing.english div.thing-head div.circle-number {
+    background: url('../img/02.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.english:hover div.thing-head div.circle-number {
+    border: 5px solid #ff6b5d;
+}
+
+div#ten-things div.thing.english div.thing-content {
+    background: #ff6b5d;
+}
+/* END - English */
+
+/* Travelling */
+div#ten-things div.thing.travelling div.thing-head div.circle-number {
+    background: url('../img/03.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.travelling:hover div.thing-head div.circle-number {
+    border: 5px solid #54daff;
+}
+
+div#ten-things div.thing.travelling div.thing-content {
+    background: #54daff;
+}
+/* END - Travelling */
+
+/* Connection */
+div#ten-things div.thing.connection div.thing-head div.circle-number {
+    background: url('../img/04.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.connection:hover div.thing-head div.circle-number {
+    border: 5px solid #ffc65b;
+}
+
+div#ten-things div.thing.connection div.thing-content {
+    background: #ffc65b;
+}
+/* END - Connection */
+
+/* Learning */
+div#ten-things div.thing.learning div.thing-head div.circle-number {
+    background: url('../img/05.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.learning:hover div.thing-head div.circle-number {
+    border: 5px solid #9bcb5e;
+}
+
+div#ten-things div.thing.learning div.thing-content {
+    background: #9bcb5e;
+}
+/* END - Learning */
+
+/* Humour */
+div#ten-things div.thing.humour div.thing-head div.circle-number {
+    background: url('../img/06.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.humour:hover div.thing-head div.circle-number {
+    border: 5px solid #998675;
+}
+
+div#ten-things div.thing.humour div.thing-content {
+    background: #998675;
+}
+/* END - Humour */
+
+/* Love */
+div#ten-things div.thing.love div.thing-head div.circle-number {
+    background: url('../img/07.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.love:hover div.thing-head div.circle-number {
+    border: 5px solid #f38ba2;
+}
+
+div#ten-things div.thing.love div.thing-content {
+    background: #f38ba2;
+}
+/* END - Love */
+
+/* London */
+div#ten-things div.thing.london div.thing-head div.circle-number {
+    background: url('../img/08.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.london:hover div.thing-head div.circle-number {
+    border: 5px solid #00bff3;
+}
+
+div#ten-things div.thing.london div.thing-content {
+    background: #00bff3;
+}
+/* END - London */
+
+/* Simplicity */
+div#ten-things div.thing.simplicity div.thing-head div.circle-number {
+    background: url('../img/09.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.simplicity:hover div.thing-head div.circle-number {
+    border: 5px solid #63d5be;
+}
+
+div#ten-things div.thing.simplicity div.thing-content {
+    background: #63d5be;
+}
+/* END - Simplicity */
+
+/* My future job */
+div#ten-things div.thing.my-future-job div.thing-head div.circle-number {
+    background: url('../img/10.png') 50% 50% no-repeat;
+}
+
+div#ten-things div.thing.my-future-job:hover div.thing-head div.circle-number {
+    border: 5px solid #c7b199;
+}
+
+div#ten-things div.thing.my-future-job div.thing-content {
+    background: #c7b199;
+}
+/* END - My future job */
+
+div#reach-me {
+    background: white;
+}
+
+div#reach-me h1#reach-me-title {
+    margin: 106px 0 32px;
+    width: 100%;
+    height: 49px;
+    background: url('../img/text-reach-me.png') 50% 0 no-repeat;
+}
+
+div#reach-me div.dark-rectangle {
+    width: 100%;
+    height: 40px;
+    background-color: #231f20;
+}
+
+div#reach-me h2 {
+    font-family: 'Brawler', serif;
+    font-weight: normal;
+    height: 130px;
+    line-height: 130px;
+    font-size: 40px;
+    text-align: center;
+    color: #362f2d;
+}
+
+div#download-cv {
+    background: url('../img/paper-scrap.png') 50% 13px no-repeat;
+    background-color: #f26d7d;
+    height: 190px;
+    border: 5px solid #231f20;
+    border-width: 0 0 5px;
+}
+
+div#download-cv a.button {
+    display: block;
+    width: 295px;
+    height: 55px;
+    line-height: 55px;
+    background: #362f2d;
+    margin: 58px auto 0;
+    border-radius: 5px;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+div#download-cv ul {
+    margin: 17px auto 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+div#download-cv ul li {
+    display: inline;
+    margin-left: 18px;
+}
+div#download-cv ul li:first-child {
+    margin: 0;
+}
+
+div#download-cv ul a.link {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+
+div#download-cv ul a.link.linked-in {
+    background: url('../img/link-linkedin.png') 50% 50% no-repeat;
+}
+
+div#download-cv ul a.link.twitter {
+    background: url('../img/link-twitter.png') 50% 50% no-repeat;
+}
+
+div#foot {
+    background: #362f2d;
+    height: 285px;
+    color: white;
+    font-family: 'Brawler', serif;
+    font-weight: normal;
+}
+
+div#foot div.wanna-see-wrap {
+    margin: 50px 0 28px;
+    text-align: center;
+}
+
+div#foot span.white-border {
+    border: 3px solid white;
+    border-width: 0 0 3px;
+}
+
+div#foot a.wanna-see {
+    font-size: 40px;
+    color: white;
+}
+
+div#foot a.wanna-see:hover {
+    color: white;
+    text-decoration: none;
+}
+
+div#foot span.additional-links {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+div#foot span.additional-links strong {
+    color: #847d7b;
+    font-weight: normal;
+}
+
+div#foot span.additional-links a {
+    color: white;
+    text-decoration: underline;
+}
+
+div#foot span.copyright {
+    display: block;
+    text-align: center;
+    margin: 105px 0 0;
+}

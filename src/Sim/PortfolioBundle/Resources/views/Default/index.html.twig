@@ -1,1 +1,453 @@
-Hello {{ name }}!
+{% extends 'SimPortfolioBundle::layout.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+
+<link rel="stylesheet" href="{{ asset('css/jquery-slider.css') }}" rel="stylesheet">
+{% endblock %} {# stylesheets #}
+
+{% block javascripts %}
+{{ parent() }}
+
+<script src="{{ asset('js/jquery-slider.js') }}" type="text/javascript"></script>
+{% endblock %} {# javascripts #}
+
+{% block content %}
+
+<div class="slider-wrap">
+    <div class="slider">
+        <ul class="slider-ul">
+            <li>
+                <div class="slide one">
+                    <div class="slide-content container">
+                        <div class="slide-titles">
+                            <h1 class="white">Do you believe that sympathy at first sight might be true?</h1>
+                            <h1 class="black bold">Wanna give it a go?</h1>
+
+                            <h3 class="black top">Then don't waste your time reading through all of this stuff and contact me.</h3>
+                        </div>
+
+                        <div class="slide-buttons">
+                            <a href="#">contact me!</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slide two">
+                    <div class="slide-content container">
+                        <div class="slide-titles">
+                            <h1 class="white">
+                                But if you're more of a analytical type who wants to know what to expect,<br/>
+                                have a look at a small sample of my portfolio.
+                            </h1>
+                            <h1 class="black">Enjoy!</h1>
+                        </div>
+
+                        <div class="slide-buttons">
+                            <a href="#">Go to portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slide three">
+                    <div class="slide-content container">
+                        <div class="slide-titles">
+                            <h1 class="white">
+                                If you want to strenghten your<br/>
+                                feeling, don't hesitate to get me<br/>
+                                know better through <span class="black">10 things I love</span><br/>
+                                and you can benefit from.
+                            </h1>
+                        </div>
+
+                        <div class="slide-buttons">
+                            <a href="#">Let me see it</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="nav-circles"></div>
+    </div>
+
+{#    <div class="slider-nav">
+        <button data-dir="prev">Previous</button>
+        <button data-dir="next">Next</button>
+    </div>
+#}
+</div>
+
+<div id="about-me">
+    <div class="container">
+        <h1>I'm a former journalist, eternal writer, keen learner.</h1>
+        <span class="gray-underscore"></span>
+        <span class="gray-underscore">
+            <strong>Writing experience</strong>
+            since the first contact with a pen
+        </span>
+        <span class="gray-underscore"></span>
+
+        <span class="gray-underscore">
+            <strong>Social media experience</strong>
+            since they first reached Slovakia in 2006
+        </span>
+        <span class="gray-underscore"></span>
+
+        <span class="gray-underscore">
+            <strong>Future plans</strong>
+            get a great job, rock London, rock the world, enjoy every day
+        </span>
+        <span class="gray-underscore"></span>
+        <h2>scroll for more</h2>
+    </div>
+</div>
+
+<div id="works">
+    <div class="container">
+        <h1 id="works-title"></h1>
+        <div class="dark-rectangle"></div>
+    </div>
+    <div class="work">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="left-column span6">left</div>
+                <div class="right-column span6">
+                    <h1>This is  culture</h1>
+                    <div class="work-description">
+                        <span class="gray-underscore">
+                            One night every year there are theatres in Slovakia wide open for
+                        </span>
+                        <span class="gray-underscore">
+                            visitors during the night. This event, known as The night of theatres
+                        </span>
+                        <span class="gray-underscore">
+                            is promoted on Facebook page, via radio and posters. In 2011 posters
+                        </span>
+                        <span class="gray-underscore">
+                            were based on simple but catchy copy - "Na hry máme celú noc" - We've
+                        </span>
+                        <span class="gray-underscore">
+                            got a whole night for the games/plays.
+                        </span>
+                        <span class="gray-underscore"></span>
+                    </div>
+
+                    <div class="work-notes">
+                        <span class="gray-underscore">
+                            <strong>Done:</strong> Creative concept, copywriting
+                        </span>
+                        <span class="gray-underscore">
+                            <strong>Client:</strong> Divadelný ústav, in cooperation with milk studio
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="left-column span6">left</div>
+                <div class="right-column span6">
+                    <h1>The night of theaters</h1>
+                    <div class="work-description">
+                        <span class="gray-underscore">
+                            One night every year there are theatres in Slovakia wide open for
+                        </span>
+                        <span class="gray-underscore">
+                            visitors during the night. This event, known as The night of theatres
+                        </span>
+                        <span class="gray-underscore">
+                            is promoted on Facebook page, via radio and posters. In 2011 posters
+                        </span>
+                        <span class="gray-underscore">
+                            were based on simple but catchy copy - "Na hry máme celú noc" - We've
+                        </span>
+                        <span class="gray-underscore">
+                            got a whole night for the games/plays.
+                        </span>
+                        <span class="gray-underscore"></span>
+                    </div>
+
+                    <div class="work-notes">
+                        <span class="gray-underscore">
+                            <strong>Done:</strong> Creative concept, copywriting
+                        </span>
+                        <span class="gray-underscore">
+                            <strong>Client:</strong> Divadelný ústav, in cooperation with milk studio
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- END work -->
+</div><!-- END works -->
+
+<div id="ten-things">
+    <div class="container">
+        <h1 id="ten-things-title"></h1>
+        <div class="dark-rectangle"></div>
+    </div>
+    
+    <div class="thing writing">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>Writing</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END writing -->
+    
+    <div class="thing english">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>English</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END english -->
+    
+    <div class="thing travelling">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>Travelling</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END travelling -->
+    
+    <div class="thing connection">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>Connection</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END connection -->
+    
+    <div class="thing learning">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>Learning</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END learning -->
+    
+    <div class="thing humour">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>Humour</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END humour -->
+    
+    <div class="thing love">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>Love</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END love -->
+    
+    <div class="thing london">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>London</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END london -->
+    
+    <div class="thing simplicity">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>Simplicity</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END simplicity -->
+    
+    <div class="thing my-future-job">
+        <div class="container">
+            <div class="thing-head">
+                <div class="circle-number"></div>
+                <h1>My future job</h1>
+                <div class="close-wrap">
+                    <a href="#" class="close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="thing-content">
+            <div class="container">
+                <div class="text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas consectetur nisi sit amet enim placerat eu tincidunt
+                    sapien dignissim. Nam enim augue, pulvinar sed accumsan vel,
+                    porta quis urna.
+                </div>
+            </div>
+        </div>
+    </div><!-- END my-future-job -->
+    
+</div><!-- END 10-things -->
+
+<div id="reach-me">
+    <div class="container">
+        <h1 id="reach-me-title"></h1>
+        <div class="dark-rectangle"></div>
+        <h2>I like the way we move!</h2>
+    </div>
+</div><!-- END reach-me -->
+
+<div id="download-cv">
+    <div class="container">
+        <a href="#" class="button">Download my CV</a>
+        <ul>
+            <li><a href="http://twitter.com/sima_k" class="link twitter"></a></li>
+            <li><a href="http://www.linkedin.com/in/simonakusalova" class="link linked-in"></a></li>
+        </ul>
+    </div>
+</div><!-- END download-cv -->
+
+<div id="foot">
+    <div class="container">
+        <div class="wanna-see-wrap">
+            <span class="white-border">
+                <a href="mailto:wannasee@siminlondon.com" class="wanna-see">wannasee@siminlondon.com</a>
+            </span>
+        </div>
+            
+        <span class="additional-links">
+            <strong>Skype:</strong> sima.kusalova
+            <strong>&mdash;</strong>
+            <strong>Blog:</strong> <a href="http://{{app.request.host}}/blog">http://{{app.request.host}}/blog</a>
+        </span>
+            
+        <span class="copyright">All rights reserved 2013&mdash;siminlondon.com / design +khn</span>
+    </div>
+</div><!-- END foot -->
+{% endblock %} {# content #}

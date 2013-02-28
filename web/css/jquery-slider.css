@@ -1,0 +1,112 @@
+div.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+div.slider ul.slider-ul {
+    width: 10000px;
+    margin: 0;
+    list-style: none;
+}
+
+div.slide {
+    width: 960px;
+    height: 415px;
+    float: left;
+}
+
+div.slide div.slide-titles {
+    height: 205px;
+    margin-top: 105px;
+}
+
+div.slide h1, div.slide h3 {
+    font-family: Times New Roman;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div.slide h1 {
+    font-size: 43.5px;
+}
+
+div.slide h3 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+div.slide.one {
+    background-color: #29dbff;
+}
+
+div.slide.one h1 {
+    width: 585px;
+}
+
+div.slide.two {
+    background-color: #ffac08;
+}
+div.slide.two h1 {
+    width: 850px;
+}
+
+div.slide.three {
+    background-color: #ff7c9b;
+}
+
+div.slide .slide-buttons a {
+    background: #372f2d;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    width: 185px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+div.slide .slide-buttons a:hover {
+    background: #473f3d;
+    text-decoration: none;
+}
+div.slide .slide-buttons a:active,
+div.slide .slide-buttons a:visited {
+    color: #fff;
+}
+
+div.slider div.nav-circles {
+    width: 100%;
+    position: absolute;
+    top: 375px;
+    text-align: center;
+}
+
+div.slider div.nav-circles ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+}
+
+div.slider div.nav-circles ul li {
+    display: inline;
+    margin-left: 10px;
+}
+div.slider div.nav-circles ul li:first-child {
+    margin: 0;
+}
+
+div.slider div.nav-circles ul li a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+div.slider div.nav-circles ul li a:hover {
+    background: #bbb;
+}
+div.slider div.nav-circles ul li a.selected {
+    background: #000;
+}
