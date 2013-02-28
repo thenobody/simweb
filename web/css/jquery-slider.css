@@ -11,29 +11,33 @@ div.slider ul.slider-ul {
 
 div.slide {
     width: 960px;
-    height: 415px;
+    height: 460px;
     float: left;
 }
 
 div.slide div.slide-titles {
-    height: 205px;
-    margin-top: 105px;
+    height: 230px;
+    margin-top: 110px;
 }
 
 div.slide h1, div.slide h3 {
     font-family: Times New Roman;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
 div.slide h1 {
-    font-size: 43.5px;
+    font-size: 45px;
+    font-family: 'CaslonGraphiqueEF';
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: -1px;
 }
 
 div.slide h3 {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Brawler', serif;
+    font-weight: normal;
+    margin: 15px 0 0px;
 }
 
 div.slide.one {
@@ -41,18 +45,38 @@ div.slide.one {
 }
 
 div.slide.one h1 {
-    width: 585px;
+    padding: 0 100px;
+    line-height: 50px;
+}
+
+div.slide.one h1.black {
+    margin: 0;
 }
 
 div.slide.two {
     background-color: #ffac08;
 }
+
 div.slide.two h1 {
-    width: 850px;
+    font-size: 37.63px;
+    line-height: 50px;
+}
+
+div.slide.two h1.black {
+    margin: 5px 0 0;
 }
 
 div.slide.three {
     background-color: #ff7c9b;
+}
+
+div.slide.three h1 {
+    font-size: 37.63px;
+    line-height: 50px;
+}
+
+div.slide.three h1 span.black {
+    letter-spacing: -1px;
 }
 
 div.slide .slide-buttons a {
@@ -65,6 +89,8 @@ div.slide .slide-buttons a {
     line-height: 50px;
     text-align: center;
     color: #fff;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 16px;
 }
 
 div.slide .slide-buttons a:hover {
@@ -79,7 +105,7 @@ div.slide .slide-buttons a:visited {
 div.slider div.nav-circles {
     width: 100%;
     position: absolute;
-    top: 375px;
+    top: 425px;
     text-align: center;
 }
 

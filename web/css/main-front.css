@@ -1,6 +1,12 @@
 /* font imports */
 @import url('http://fonts.googleapis.com/css?family=Brawler');
 
+@font-face {
+    font-family: CaslonGraphiqueEF;
+    src: url(../font/CaslonGraphiqueEF.ttf);
+    font-weight:400;
+}
+
 body {
     background-color: #544F53;
 }
@@ -28,6 +34,8 @@ div.main-nav a {
 }
 
 div.main-nav div.ul-border {
+    width: 150px;
+    display: inline-block;
     border: 4px solid rgba(255, 255, 255, .5);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -36,6 +44,7 @@ div.main-nav div.ul-border {
 
 div.main-nav ul {
     margin: 0;
+    width: 150px;
     list-style-type: none;
     background-color: #000;
 }
@@ -43,23 +52,37 @@ div.main-nav ul {
 div.main-nav ul li {
     height: 30px;
     text-align: center;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #1e1b1b;
 }
 
 div.main-nav ul li:last-child {
-    border-bottom: 1px solid #99aaaa;
+    border-top: 1px solid #535353;
+    border-bottom: none;
 }
 
 div.main-nav ul a {
     line-height: 30px;
     display: inline-block;
     width: 100%;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+div.main-nav ul a.button {
+    width: 100%;
+    height: 30px;
+    background: url('../img/three-lines.png') 50% 50% no-repeat;
 }
 
 div.main-nav a.email {
     display: inline-block;
+    vertical-align: top;
+    float: right;
+    width: 240px;
     line-height: 35px;
-    background-color:rgba(0,0,0,0.5);
+    font-size: 13px;
+    font-family: 'Brawler', serif;
+    background-color: rgba(54,47,45,0.6);
     text-align: center;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
