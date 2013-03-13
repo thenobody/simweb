@@ -1,3 +1,7 @@
+div.slide {
+    position: relative;
+}
+
 div.slider {
     width: 100%;
     overflow: hidden;
@@ -13,6 +17,12 @@ div.slide {
     width: 960px;
     height: 460px;
     float: left;
+    overflow: hidden;
+}
+
+div.slide div.slide-content {
+    position: relative;
+    z-index: 10;
 }
 
 div.slide div.slide-titles {
@@ -53,6 +63,26 @@ div.slide.one h1.black {
     margin: 0;
 }
 
+div.slide.one div.img-paper-scrap {
+    width: 171px;
+    height: 157px;
+    background: url('../img/slide1-img-paper-scrap.png') 0 0 no-repeat;
+    position: absolute;
+    left: 150px;
+    top: 260px;
+    z-index: 1;
+}
+
+div.slide.one div.img-notepad {
+    width: 364px;
+    height: 171px;
+    background: url('../img/slide1-img-notepad.png') 0 0 no-repeat;
+    position: absolute;
+    right: -90px;
+    top: 0px;
+    z-index: 1;
+}
+
 div.slide.two {
     background-color: #ffac08;
 }
@@ -66,6 +96,36 @@ div.slide.two h1.black {
     margin: 5px 0 0;
 }
 
+div.slide.two div.img-pencil {
+    width: 146px;
+    height: 89px;
+    background: url('../img/slide2-img-pencil.png') 0 0 no-repeat;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    z-index: 1;
+}
+
+div.slide.two div.img-paper-scrap {
+    width: 175px;
+    height: 118px;
+    background: url('../img/slide2-img-paper-scrap.png') 0 0 no-repeat;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+    z-index: 1;
+}
+
+div.slide.two div.img-paper-and-pencil {
+    width: 284px;
+    height: 149px;
+    background: url('../img/slide2-img-paper-and-pencil.png') 0 0 no-repeat;
+    position: absolute;
+    right: 170px;
+    bottom: -1px;
+    z-index: 1;
+}
+
 div.slide.three {
     background-color: #ff7c9b;
 }
@@ -77,6 +137,46 @@ div.slide.three h1 {
 
 div.slide.three h1 span.black {
     letter-spacing: -1px;
+}
+
+div.slide.three div.img-paper-scrap {
+    width: 175px;
+    height: 129px;
+    background: url('../img/slide3-img-paper-scrap.png') 0 0 no-repeat;
+    position: absolute;
+    left: 65px;
+    top: 0px;
+    z-index: 1;
+}
+
+div.slide.three div.img-pen-left {
+    width: 543px;
+    height: 161px;
+    background: url('../img/slide3-img-pen-left.png') 0 0 no-repeat;
+    position: absolute;
+    left: -160px;
+    bottom: 55px;
+    z-index: 1;
+}
+
+div.slide.three div.img-pen-right {
+    width: 328px;
+    height: 300px;
+    background: url('../img/slide3-img-pen-right.png') 0 0 no-repeat;
+    position: absolute;
+    right: -60px;
+    top: 0px;
+    z-index: 1;
+}
+
+div.slide.three div.img-clipboard {
+    width: 427px;
+    height: 141px;
+    background: url('../img/slide3-img-clipboard.png') 0 0 no-repeat;
+    position: absolute;
+    right: 10px;
+    bottom: -1px;
+    z-index: 1;
 }
 
 div.slide .slide-buttons a {

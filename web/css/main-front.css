@@ -27,6 +27,7 @@ div.main-nav {
     position: fixed;
     width: 100%;
     font-size: 0.8em;
+    z-index: 999;
 }
 
 div.main-nav a {
@@ -217,7 +218,7 @@ div#ten-things div.thing {
 
 div#ten-things div.thing div.thing-head {
     height: 100px;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 div#ten-things div.thing div.thing-head div.circle-number {
