@@ -155,6 +155,7 @@ div#works div.dark-rectangle {
 }
 
 div#works div.work {
+    position: relative;
     padding: 80px 0;
     border: 1px solid #d3d3d3;
     border-width: 0 0 1px;
@@ -191,6 +192,75 @@ div#works div.work div.right-column div.work-notes {
 
 div#works div.work div.right-column div.work-notes strong {
     font-weight: bold;
+}
+
+div#works div.work div.work-detail {
+    background: #ff5055;
+    z-index: 99999;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    left: 100%;
+}
+
+div#works div.work div.work-detail div.mail-head {
+    height: 90px;
+    vertical-align: middle;
+    line-height: 90px;
+}
+div#works div.work div.work-detail div.mail-head a {
+    float: right;
+    font-family: 'Brawler', serif;
+    font-size: 16px;
+    color: white;
+}
+
+div#works div.work a.show-detail {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    display: block;
+    width: 45px;
+    height: 270px;
+    background: url('../img/right-arrow.png') 50% 50% no-repeat #231f20;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div#works div.work div.work-detail a.hide-detail {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    display: block;
+    width: 45px;
+    height: 270px;
+    background: url('../img/left-arrow.png') 50% 50% no-repeat #231f20;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div#works div.work div.work-detail h1 {
+    font-family: 'Brawler', serif;
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+div#works div.work div.work-detail div.lines {
+    font-family: 'Brawler', serif;
+    font-size: 14px;
+    line-height: 27px;
+    background: url('../img/gray-underline.png') 0 -7px repeat;
+}
+
+div#works div.work div.work-detail div.lines img {
+    display: block;
+}
+div#works div.work div.work-detail div.lines div.summary {
+    margin-top: 27px;
 }
 
 div#ten-things {

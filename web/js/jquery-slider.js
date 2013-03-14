@@ -3,8 +3,7 @@
     var $sliderWrap = $('div.slider-wrap');
     var $slider = $('div.slider', $sliderWrap);
     var $sliderUl = $('ul.slider-ul', $slider);
-    var $sliderNav = $('div.slider-nav', $sliderWrap);
-    
+        
     var $navCircles = $('div.nav-circles', $slider);
     
     var slideWidth = $sliderWrap.width();
@@ -29,7 +28,17 @@
     
     scrollSlideByCircle($navCirclesAnchors.first(), $navCirclesAnchors);
     
-    $('button', $sliderNav).click(function() {
+    $('a.slide-nav', $slider).mouseenter(function () {
+        $(this).stop().animate({
+        backgroundColor: "rgba(6,2,2,0.4);"
+    }, 250);
+    }).mouseleave(function () {
+        $(this).stop().animate({
+        backgroundColor: "rgba(6,2,2,0.2);"
+    }, 250);
+    });
+    
+    $('a.slide-nav', $slider).click(function() {
         if ($(this).data('dir') === 'next') {
             currentSlide = (currentSlide + 1) % slideCount;
         } else {

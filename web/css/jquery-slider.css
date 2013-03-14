@@ -1,8 +1,5 @@
-div.slide {
-    position: relative;
-}
-
 div.slider {
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -14,6 +11,7 @@ div.slider ul.slider-ul {
 }
 
 div.slide {
+    position: relative;
     width: 960px;
     height: 460px;
     float: left;
@@ -200,6 +198,29 @@ div.slide .slide-buttons a:hover {
 div.slide .slide-buttons a:active,
 div.slide .slide-buttons a:visited {
     color: #fff;
+}
+
+div.slider a.slide-next, div.slider a.slide-prev {
+    position: absolute;
+    top: 180px;
+    z-index: 999;
+    width: 45px;
+    height: 100px;
+    display: block;
+}
+
+div.slider a.slide-next {
+    right: 0px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    background: url('../img/right-arrow.png') 50% 50% no-repeat rgba(6,2,2,0.2);
+}
+
+div.slider a.slide-prev {
+    left: 0px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background: url('../img/left-arrow.png') 50% 50% no-repeat rgba(6,2,2,0.2);
 }
 
 div.slider div.nav-circles {

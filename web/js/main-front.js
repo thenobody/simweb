@@ -89,4 +89,39 @@
     $('a.close').click(function(event) {
         event.preventDefault();
     });
+    
+    $('div.work a.fading').mouseenter(function () {
+        $(this).stop().animate({
+           'background-color' : 'rgba(23,31,20,0.2)' 
+        }, 150);
+    }).mouseleave(function () {
+        $(this).stop().animate({
+           'background-color' : 'rgba(23,31,20,1.0)' 
+        }, 150);
+    });
+    
+    var preventScrolling = false;
+    var currentYPosition = 0;
+    $('div.work a.show-detail').click(function (event) {
+        event.preventDefault();
+        $('div.work-detail', $(this).closest('div.work')).stop().animate({
+            'left' : '0px'
+        }, 500);
+        preventScrolling = true;
+        currentYPosition = window.pageYOffset;
+    });
+    $('div.work-detail a.hide-detail').click(function (event) {
+        event.preventDefault();
+        $(this).closest('div.work-detail').stop().animate({
+            'left' : '100%'
+        }, 500);
+        preventScrolling = false;
+        currentYPosition = window.pageYOffset;
+    });
+    
+    $(window).scroll(function() {
+        if (preventScrolling) {
+            $(window).scrollTop(currentYPosition);
+        }
+    });
 })(jQuery)
